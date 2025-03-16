@@ -12,7 +12,7 @@ A simple student recruitment portal with a login system and dashboard for managi
 
 ## 🛠 Tech Stack  
 - **Backend:** Laravel (PHP)  
-- **Frontend:** ReactJS  
+- **Frontend:** HTML, CSS, BootStap, Javascript, jQuery  
 - **Database:** MySQL  
 
 ## 🔧 Installation  
