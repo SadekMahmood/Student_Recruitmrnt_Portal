@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduConnect Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .dashboard-container {
+            padding: 20px;
+        }
+        .dashboard-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .application-status table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .application-status th, .application-status td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .application-status th {
+            background-color: #f4f4f4;
+        }
+        .recent-activity, .upcoming-deadlines {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h2>EduConnect</h2>
+        <div class="nav-links">
+            <a href="#">Dashboard</a>
+            <a href="#">Students</a>
+            <a href="#">Universities</a>
+            <a href="#">Applications</a>
+        </div>
+    </nav>
+    <div class="dashboard-container">
+        <h1>Agent Dashboard</h1>
+        <div class="dashboard-cards">
+            <div class="card"><h3>Students</h3><p>42 Active</p></div>
+            <div class="card"><h3>Applications</h3><p>18 Pending</p></div>
+            <div class="card"><h3>Universities</h3><p>156 Partners</p></div>
+            <div class="card"><h3>Acceptances</h3><p>24 This Month</p></div>
+        </div>
+        <div class="application-status">
+            <h2>Application Status</h2>
+            <table>
+                <tr><th>Name</th><th>University</th><th>Status</th><th>Deadline</th></tr>
+                <tr><td>Emma Wilson</td><td>University of Toronto</td><td>Submitted</td><td>Due in 5 days</td></tr>
+                <tr><td>James Chen</td><td>MIT</td><td>Documents Pending</td><td>Due in 3 days</td></tr>
+                <tr><td>Sophia Rodriguez</td><td>Oxford</td><td>Interview Scheduled</td><td>Tomorrow</td></tr>
+                <tr><td>Michael Kim</td><td>Melbourne</td><td>Accepted</td><td>Completed</td></tr>
+                <tr><td>Olivia Johnson</td><td>ETH Zurich</td><td>Payment Pending</td><td>Due in 7 days</td></tr>
+            </table>
+        </div>
+        <div class="recent-activity">
+            <h2>Recent Activity</h2>
+            <p>New Application Created - Emma Wilson (2 hours ago)</p>
+            <p>Documents Uploaded - James Chen (5 hours ago)</p>
+            <p>Interview Scheduled - Sophia Rodriguez (Yesterday)</p>
+        </div>
+        <div class="upcoming-deadlines">
+            <h2>Upcoming Deadlines</h2>
+            <p>Document Submission - James Chen (Due Tomorrow)</p>
+            <p>Application Fee Payment - Olivia Johnson (Due in 3 days)</p>
+        </div>
+    </div>
+</body>
+</html>
